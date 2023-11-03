@@ -1,0 +1,24 @@
+.background {
+    background-color: black;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    background-color: black;
+    
+    &__link {
+        display: flex;
+        gap:30px;
+    }
+    &__title {
+        text-decoration: none;
+        color: green;
+    }
+    &__font {
+        text-decoration: none;
+        color: green;
+    }
+}

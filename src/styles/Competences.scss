@@ -1,0 +1,19 @@
+.competences {
+
+    &__title {
+        text-align: center;
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+    &__content {
+        column-count: 2;
+        column-gap: 40px;
+        column-fill: balance;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    &__collapse {
+        margin-bottom: 40px;
+        -webkit-column-break-inside: avoid;
+    }
+}
