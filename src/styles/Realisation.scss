@@ -2,6 +2,7 @@
     &__title {
         text-align: center;
         margin-top: 50px;
+        margin-bottom: 70px;
     }
     &__content {
         display: flex;
@@ -11,5 +12,8 @@
         justify-content: center;
         margin-left: 5%;
         margin-right: 5%;
+    }
+    &__card {
+        width: 40%;
     }
 }

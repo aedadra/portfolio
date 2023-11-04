@@ -1,7 +1,8 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import Language from "../components/Language";
+import "../styles/RealisationDetail.scss"
 
 function ProjectDetails() {
 
@@ -29,10 +30,14 @@ function ProjectDetails() {
 		<div key={params.id} className="projectDetails">
 			{projectDetail &&
 				<div className="projectDetails__content">
-					<img src={projectDetail.cover} alt="" className="projectDetails__image"/>
-					<h1 className="projectDetails__title">{projectDetail.title} </h1>
+					<div className="projectDetails__title-image">
+						<h1 className="projectDetails__title">{projectDetail.title} </h1>
+						<img src={projectDetail.cover} alt="" className="projectDetails__image"/>
+					</div>
+					<div className="projectDetails__description-outils">
 					<p className="projectDetails__description">{projectDetail.description}</p>
 					<Language language={outils} />
+					</div>
 					<a href={projectDetail.lien} className="projectDetails__link">Lien vers le Github du projet</a>
 				</div>
 			}

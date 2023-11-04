@@ -21,7 +21,7 @@ function Project() {
             <h1 className='projects__title'>Mes projets</h1>
             <div className='projects__content'>
             {project.map((project, id) => 
-                <div key={id}>
+                <div key={id} className='projects__card'>
                     <Link to={`./realisationsDetails/${project.id}`}>
                         <Card cover={project.cover} title={project.title} />
                     </Link>

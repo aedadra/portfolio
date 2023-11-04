@@ -1,9 +1,11 @@
+import "../styles/Card.scss"
+
 function Card({ cover, title }) {
 	
 	return (
-		<article>
-			<img src={cover} alt="" />
-			<p>{title}</p>
+		<article className="card">
+			<img src={cover} alt=""  className="card__image"/>
+			<p className="card__title">{title}</p>
 		</article>
 	);
 }
