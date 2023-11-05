@@ -3,8 +3,13 @@
     &__image {
         width: 100%;
         object-fit: contain;
+        border-style:solid;
+        border-radius: 20px;
+        border-color: #10a95b;
+        border-width: 4px;
     }
     &__title {
         text-align: center;
+        color: white;
     }
 }

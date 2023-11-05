@@ -1,9 +1,11 @@
 .competences {
-
+    background-color: black;
+    padding-top: 30px;
     &__title {
         text-align: center;
         margin-bottom: 70px;
-        margin-top: 50px;
+        color: #10a95b;
+        font-family: 'Roboto Slab';
     }
     &__content {
         column-count: 2;
@@ -11,9 +13,13 @@
         column-fill: balance;
         margin-left: 10%;
         margin-right: 10%;
+        font-family: 'Roboto Slab';
     }
     &__collapse {
         margin-bottom: 40px;
         -webkit-column-break-inside: avoid;
+    }
+    &__li {
+        margin-bottom: 10px;
     }
 }

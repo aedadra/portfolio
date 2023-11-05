@@ -27,20 +27,22 @@ function ProjectDetails() {
 	});
 
 	return (
-		<div key={params.id} className="projectDetails">
-			{projectDetail &&
-				<div className="projectDetails__content">
-					<div className="projectDetails__title-image">
-						<h1 className="projectDetails__title">{projectDetail.title} </h1>
-						<img src={projectDetail.cover} alt="" className="projectDetails__image"/>
+		<div className="background">
+			<div key={params.id} className="projectDetails">
+				{projectDetail &&
+					<div className="projectDetails__content">
+						<div className="projectDetails__title-image">
+							<h1 className="projectDetails__title">{projectDetail.title} </h1>
+							<img src={projectDetail.cover} alt="" className="projectDetails__image" />
+						</div>
+						<div className="projectDetails__description-outils">
+							<p className="projectDetails__description">{projectDetail.description}</p>
+							<Language language={outils} />
+						</div>
+						<a href={projectDetail.lien} className="projectDetails__link">Lien vers le Github du projet</a>
 					</div>
-					<div className="projectDetails__description-outils">
-					<p className="projectDetails__description">{projectDetail.description}</p>
-					<Language language={outils} />
-					</div>
-					<a href={projectDetail.lien} className="projectDetails__link">Lien vers le Github du projet</a>
-				</div>
-			}
+				}
+			</div>
 		</div>
 	)
 }

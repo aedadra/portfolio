@@ -3,11 +3,17 @@
     padding: 10px;
     width: 40%;
     border-radius: 20px;
+    border-width: 4px;
+    border-color: #10a95b;
     align-items: center;
+    background-color: black;
     &__title {
         text-align: center;
+        color: white;
+        font-family: 'Roboto Slab';
     }
     &__content {
-
+        color: white;
+        font-family: 'Roboto Slab';
     }
 }

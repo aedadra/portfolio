@@ -8,26 +8,33 @@
     color: white;
     font-size: 18px;
     font-weight: 700;
+    padding-top: 30px;
+    font-family: 'Roboto Slab';
     &__title {
-    color: rgba(172, 248, 10, 1);
-    margin-top: 50px;
+    color: #10a95b;
+    font-family: 'Roboto Slab';
     }
     & input, textarea {
         border-radius: 10px;
-        border-color: rgba(255, 252, 65, 1);
+        border-color: #10a95b;
         width: 50%;
-        border-width: 3px ;
+        border-width: 5px ;
         border-style: solid;
+        font-size: 18px;
+    }
+    & input {
+        height: 3em;
     }
     &__submit {
-        color: rgba(255, 252, 65, 1);
+        color: #10a95b;
         background-color: black;
         width: 25%;
         border-radius: 10px;
-        border-color: rgba(255, 252, 65, 1);
+        border-color: #10a95b;
         font-size: 20px;
         font-weight: 600;
-        border-width: 3px ;
+        border-width: 5px ;
         border-style: solid;
+        font-family: 'Roboto Slab';
     }
 }

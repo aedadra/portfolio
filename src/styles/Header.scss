@@ -8,17 +8,57 @@
     margin-right: 20px;
     align-items: center;
     background-color: black;
-    
+    font-family: 'Roboto Slab';
     &__link {
         display: flex;
         gap:30px;
     }
-    &__title {
-        text-decoration: none;
-        color: green;
-    }
-    &__font {
-        text-decoration: none;
-        color: green;
-    }
+}
+.header a {
+    text-decoration: none;
+}
+
+.active {
+    color: black;
+    background-color:  #10a95b;
+    border-radius: 20px;
+}
+
+.pending {
+    color: #10a95b;
+}
+
+.pendingH1 {
+    color: #10a95b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.activeH1 {
+    color: black;
+    background-color:  #10a95b;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.activeH1 h1 {
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+}
+
+.pendingH1 h1 {
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+}
+
+.header p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-weight: 600;
+}
+
+.header h1 {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }

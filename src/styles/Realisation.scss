@@ -1,19 +1,26 @@
 .projects {
+    background-color: black;
+    padding-top: 30px;
     &__title {
         text-align: center;
-        margin-top: 50px;
         margin-bottom: 70px;
+        color: #10a95b;
+        font-family: 'Roboto Slab';
     }
     &__content {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 10%;
         align-items: center;
         justify-content: center;
         margin-left: 5%;
         margin-right: 5%;
+        font-family: 'Roboto Slab';
     }
     &__card {
         width: 40%;
+    }
+    &__card a {
+        text-decoration: none;
     }
 }

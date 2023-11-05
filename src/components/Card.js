@@ -5,7 +5,7 @@ function Card({ cover, title }) {
 	return (
 		<article className="card">
 			<img src={cover} alt=""  className="card__image"/>
-			<p className="card__title">{title}</p>
+			<h3 className="card__title">{title}</h3>
 		</article>
 	);
 }
