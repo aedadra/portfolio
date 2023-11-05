@@ -5,9 +5,11 @@ import "../styles/Collapse.scss"
 function Collapse({title, content}) {
 
     const [open, setOPen] = useState(false);
+    const [toggle, setToggle] = useState(false);
 
     const OpenIt = () => {
         setOPen(!open);
+        setToggle(!toggle)
     };
 
     return (
@@ -15,7 +17,7 @@ function Collapse({title, content}) {
             <div className="collapse__title">
                 <h3 className="collapse__title--h"> {title}</h3>
                 <button onClick={OpenIt} className="collapse__title--img">
-                    <img src={VectorOpen} alt="fleche vers le bas" />
+                    <img src={VectorOpen} alt="fleche vers le bas" className={toggle ? "up" : "down"}/>
                 </button>
             </div> 
             <div className="collapse__content">

@@ -7,13 +7,26 @@
     border-color: #10a95b;
     align-items: center;
     background-color: black;
+    @media (max-width: 900px) {
+        width: 80%;
+    }
+    @media (max-width: 720px) {
+        border-width: 2px;
+    }
     &__title {
         text-align: center;
         color: white;
         font-family: 'Roboto Slab';
+        @media (max-width: 720px) {
+            font-size: 1em;
+        }
     }
     &__content {
         color: white;
         font-family: 'Roboto Slab';
+        list-style-image: linear-gradient(to left bottom, green, white);
+        @media (max-width: 720px) {
+            font-size: 0.8em;
+        }
     }
 }

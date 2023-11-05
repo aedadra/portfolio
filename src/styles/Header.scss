@@ -11,7 +11,19 @@
     font-family: 'Roboto Slab';
     &__link {
         display: flex;
+        align-items: center;
         gap:30px;
+        @media (max-width: 900px) {
+            font-size: 0.8em;
+            gap: 15px;
+        }
+        @media (max-width: 720px) {
+            font-size: 0.7em;
+            gap: 5px;
+        }
+        @media (max-width: 450px) {
+            font-size: 0.6em;
+        }
     }
 }
 .header a {
@@ -61,4 +73,15 @@
 .header h1 {
     padding-left: 0.5em;
     padding-right: 0.5em;
+    @media (max-width: 900px) {
+        font-size: 1.5em;
+        @media (max-width: 720px) {
+            font-size: 1em;
+        }
+        @media (max-width: 450px) {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 0.9em;
+        }
+    }
 }
