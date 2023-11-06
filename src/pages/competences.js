@@ -25,8 +25,7 @@ function Competences() {
                     <Collapse title={competence.title} content={competence && competence.competences.map((competences, index) => { return (<li className="competences__li" key={index}>{competences}</li>) })} />
                 </div>
             )}
-            </div>    
-            
+            </div>               
         </div>
     );
 }

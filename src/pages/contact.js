@@ -2,14 +2,11 @@ import "../styles/Contact.scss"
 
 function Contact() {
 
-
     const send = (e) => {
         e.preventDefault();
         document.contact.reset();
         alert("votre message à bien été envoyé")
     };
-    
-
     
     return (
         <div >
