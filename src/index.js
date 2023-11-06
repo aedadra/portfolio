@@ -18,11 +18,11 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path= "/" element={<Home />} />
-        <Route path="/pages/competences" element={<Competences />} />
-        <Route path="/contact" element={<Contact />}  />
-        <Route path="/realisations" element={<Project />} />
-        <Route path="/realisationsDetails/:id" element={<ProjectDetails/>} />
+        <Route path= "/portfolio/" element={<Home />} />
+        <Route path="/portfolio/competences" element={<Competences />} />
+        <Route path="/portfolio/contact" element={<Contact />}  />
+        <Route path="/portfolio/realisations" element={<Project />} />
+        <Route path="/portfolio/realisationsDetails/:id" element={<ProjectDetails/>} />
       </ Routes>
       <Footer />
     </ Router>    
