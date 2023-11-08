@@ -7,6 +7,7 @@ import Competences from './pages/competences';
 import Footer from './components/Footer';
 
 
+
 function App () {
   return (
 
