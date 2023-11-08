@@ -1,9 +1,10 @@
 .home {
-    background-color: black;
     font-family: 'Roboto Slab';
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
+    min-height: 59vh;
+
     @media (max-width: 1100px) {
         flex-direction: column;
         align-items: center;
@@ -56,4 +57,38 @@
         }
 
     }
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.submit {
+    color: #10a95b;
+    background-color: black;
+    width: 25%;
+    border-radius: 20px;
+    border-color: #10a95b;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-width: 4px ;
+    border-style: solid;
+    font-family: 'Roboto Slab';
+    margin-bottom: 20px;
+
+       
+@media (max-width: 720px) {
+        border-width: 2px;
+        font-size: 1em;
+    }
+}
+.submit:hover {
+    cursor: pointer;
+}
+.submit a {
+    text-decoration: none;
+    color: #10a95b;
+}
+.background {
+    background-color: black;
 }

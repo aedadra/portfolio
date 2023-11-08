@@ -1,9 +1,11 @@
 import '../styles/Home.scss';
 import Identite from "../images/Identite.jpg"
+import { Link } from 'react-router-dom';
 
 function Home() {
   
   return (
+	<div className='background'>
 	  <div className='home'>
 		  <img src={Identite} alt="" className='home__image' />
 		  <div className='home__text'>
@@ -26,6 +28,16 @@ function Home() {
 					  <li>Septembre 2013 à aout 2014 : auditeur en inventaire pour RGIS Tours</li>
 				  </ul>
 			  </div>
+		  </div>
+	  </div>
+	  <div className='contact'>
+		  <button className='submit'>
+			
+			  <Link to='#'
+				  onClick={() => window.location = 'mailto:clement.moulin@yahoo.fr'}>
+				  Contactez-moi !
+			  </Link>
+		  </button>
 		  </div>
 	  </div>
   );

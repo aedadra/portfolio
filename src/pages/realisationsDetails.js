@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Language from "../components/Language";
 import "../styles/RealisationDetail.scss"
+import project from "../components/project";
 
 function ProjectDetails() {
 
@@ -11,16 +12,13 @@ function ProjectDetails() {
 
 
 	useEffect(() => {
-		fetch("/projets.json")
-			.then((response) => response.json())
-			.then((data) => {
-				const picked = data.find(({ id }) => id === params.id)
+		
+				const picked = project.find(({ id }) => id === params.id)
 				setPorjectDetail(picked)
-				console.log(data)
+				
 				console.log(params.id)
-			})
-			.catch((error) => console.log(error))
-	}, [params]);
+			},[params] )
+			
 
 	const outils = projectDetail && projectDetail.language.map((language, id) => {
 		return (<li key={id}>{language}</li>)
