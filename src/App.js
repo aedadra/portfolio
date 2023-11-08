@@ -14,10 +14,10 @@ function App () {
 <HashRouter>
       <Header />
       <Routes>
-        <Route path= "#/portfolio" element={<Home />} />
-        <Route path="#/pages/competences" element={<Competences />} />
-        <Route path="#/realisations" element={<Project />} />
-        <Route path="#/realisationsDetails/:id" element={<ProjectDetails/>} />
+        <Route path= "/portfolio" element={<Home />} />
+        <Route path="/pages/competences" element={<Competences />} />
+        <Route path="/realisations" element={<Project />} />
+        <Route path="/realisationsDetails/:id" element={<ProjectDetails/>} />
         <Route path="*" element={<Error />} />
       </ Routes>
       <Footer />
