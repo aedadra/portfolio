@@ -1,4 +1,4 @@
-import { BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
 import Project from './pages/realisations';
@@ -11,7 +11,7 @@ import Error from './pages/error';
 function App () {
   return (
 
-<HashRouter>
+<div>
       <Header />
       <Routes>
         <Route path= "/portfolio" element={<Home />} />
@@ -21,6 +21,6 @@ function App () {
         <Route path="*" element={<Error />} />
       </ Routes>
       <Footer />
-    </ HashRouter> 
+</div>
 )}
 export default App
