@@ -66,7 +66,6 @@
 .submit {
     color: #10a95b;
     background-color: black;
-    width: 25%;
     border-radius: 20px;
     border-color: #10a95b;
     font-size: 1.3em;
@@ -75,8 +74,8 @@
     border-style: solid;
     font-family: 'Roboto Slab';
     margin-bottom: 20px;
-
-       
+    padding-left: 10px;
+    padding-right: 10px;  
 @media (max-width: 720px) {
         border-width: 2px;
         font-size: 1em;
