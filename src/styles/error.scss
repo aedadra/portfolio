@@ -1,0 +1,38 @@
+.error {
+    background-color: black;
+    color: #10a95b;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h1 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-top: 20px;
+        font-size: 8em;
+    }
+    & h3 {
+        font-size: 3em;
+        margin-block-end: 0;
+        margin-block-start: 0.5em;
+    }
+    & p {
+        font-size: 2em;
+    }
+    & a {
+        text-decoration: none;
+        color: #10a95b;
+        font-size: 2em;
+        border-style: solid;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 600;
+        border-width: 4px;
+    }
+    & a:hover {
+        color: black;
+        background-color: #10a95b;
+        font-weight: 800;
+    }        
+}
