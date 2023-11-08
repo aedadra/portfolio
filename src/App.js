@@ -5,7 +5,7 @@ import Project from './pages/realisations';
 import ProjectDetails from './pages/realisationsDetails';
 import Competences from './pages/competences';
 import Footer from './components/Footer';
-
+import Error from './pages/error';
 
 
 function App () {
@@ -18,7 +18,7 @@ function App () {
         <Route path="/pages/competences" element={<Competences />} />
         <Route path="/pages/realisations" element={<Project />} />
         <Route path="/pages/realisations/realisationsDetails/:id" element={<ProjectDetails/>} />
-        
+        <Route path="*" element={<Error />} />
       </ Routes>
       <Footer />
     </ Router> 
