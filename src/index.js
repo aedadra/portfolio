@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Error from './pages/error';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
        <App />
+       <Router>
+        <Routes>
+       <Route path="*" element={<Error />} />
+       </Routes>
+       </Router>
   </React.StrictMode>
 );
 

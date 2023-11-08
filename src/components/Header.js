@@ -13,10 +13,10 @@ function Header() {
                     <nav className='header__link'>
                         <NavLink className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : "pending"
-                        } to="/pages/competences"><p>Mes Competences</p></NavLink>
+                        } to="/pages/competences"><p>Mes Compétences</p></NavLink>
                         <NavLink className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : "pending"
-                        } to="../pages/realisations"><p>Mes Réalisations</p></NavLink>
+                        } to="../pages/realisations"><p>Mes Projets</p></NavLink>
                     </nav>
                 </div>
             </div>

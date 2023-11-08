@@ -7,7 +7,7 @@ function Competences() {
 
     return (
         <div className="competences">
-            <h1 className="competences__title">Mes competences</h1>
+            <h1 className="competences__title">Mes compétences</h1>
             <div className="competences__content">
             {competence.map((competence, id) =>
                 <div key={id} className="competences__collapse">
