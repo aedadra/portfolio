@@ -14,10 +14,10 @@ function App () {
 <div>
       <Header />
       <Routes>
-        <Route path= "/portfolio" element={<Home />} />
-        <Route path="/pages/competences" element={<Competences />} />
-        <Route path="/pages/realisations" element={<Project />} />
-        <Route path="/pages/realisations/realisationsDetails/:id" element={<ProjectDetails/>} />
+        <Route path= "#/portfolio" element={<Home />} />
+        <Route path="#/pages/competences" element={<Competences />} />
+        <Route path="#/pages/realisations" element={<Project />} />
+        <Route path="#/pages/realisations/realisationsDetails/:id" element={<ProjectDetails/>} />
         <Route path="*" element={<Error />} />
       </ Routes>
       <Footer />
