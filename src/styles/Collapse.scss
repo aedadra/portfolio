@@ -1,40 +1,46 @@
+@import "./mixin.scss";
+
 .collapse {
     &__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-left: 10px;
-        border-style: solid;
-        border-radius: 20px;
-        border-color: #10a95b;
-        border-width: 4px;
+        @include border;
         background-color: black;
         font-family: 'Roboto Slab';
+
         @media (max-width: 720px) {
             border-width: 2px;
         }
     }
+
     &__title--h {
         color: white;
         font-family: 'Roboto Slab';
+
         @media (max-width: 900px) {
             font-size: 1em;
         }
     }
+
     &__title button {
         border: none;
         background-color: black;
         height: 60%;
     }
+
     &__title button:hover {
         cursor: pointer;
     }
+
     &__content {
         list-style-image: linear-gradient(to left bottom, green, white);
         color: white;
         text-align: justify;
         padding-left: 10px;
         padding-right: 10px;
+
         @media (max-width: 900px) {
             font-size: 0.85em;
         }
@@ -43,9 +49,10 @@
 
 .up {
     transition: 0.4s ease-in-out;
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
 }
+
 .down {
     transform: rotate(0deg);
-	transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }

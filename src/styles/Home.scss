@@ -1,3 +1,5 @@
+@import "./mixin.scss";
+
 .home {
     font-family: 'Roboto Slab';
     display: flex;
@@ -9,85 +11,96 @@
         flex-direction: column;
         align-items: center;
     }
+
     &__image {
         width: 35%;
         object-fit: cover;
-        border-style:solid;
-        border-radius: 20px;
-        border-color: #10a95b;
-        border-width: 4px;
+        @include border;
+
         @media (max-width: 900px) {
             object-fit: contain;
         }
-        @media (max-width: 720px) {
-            border-width: 2px;
-        }
     }
+
     &__text {
         width: 50%;
         text-align: justify;
+
         @media (max-width: 900px) {
             font-size: 0.7em;
         }
     }
+
     &__identite {
         color: white;
         margin-bottom: 30px;
     }
+
     &__parcours {
         color: white;
         list-style-image: linear-gradient(to left bottom, green, white);
     }
+
     &__title {
-        color:  #10a95b;
+        color: #10a95b;
         text-align: center;
         margin-bottom: 30px;
+
         @media (max-width: 900px) {
             font-size: 1.5em;
             margin-bottom: 15px;
         }
     }
+
     &__list {
         padding-left: 0;
     }
+
     &__list li {
         margin-bottom: 8px;
+
         @media (max-width: 900px) {
             font-size: 0.9em;
         }
 
     }
 }
+
 .contact {
-    display: flex;
-    justify-content: center;
+    @include displayCenter;
     margin-top: 30px;
 }
+
 .submit {
     color: #10a95b;
     background-color: black;
-    border-radius: 20px;
-    border-color: #10a95b;
+    @include border;
     font-size: 1.3em;
     font-weight: 600;
-    border-width: 4px ;
-    border-style: solid;
     font-family: 'Roboto Slab';
     margin-bottom: 20px;
     padding-left: 10px;
-    padding-right: 10px;  
-@media (max-width: 720px) {
-        border-width: 2px;
+    padding-right: 10px;
+
+    @media (max-width: 720px) {
         font-size: 1em;
     }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #10a95b;
+    }
+
+    & a {
+        text-decoration: none;
+        color: #10a95b;
+    }
+
+    & a:hover {
+        color: black;
+    }
 }
-.submit:hover {
-    cursor: pointer;
-}
-.submit a {
-    text-decoration: none;
-    color: #10a95b;
-}
+
 .background {
     background-color: black;
 }

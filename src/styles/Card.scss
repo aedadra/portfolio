@@ -1,19 +1,18 @@
+@import "./mixin.scss";
+
 .card {
     width: 100%;
+
     &__image {
         width: 100%;
         object-fit: contain;
-        border-style:solid;
-        border-radius: 20px;
-        border-color: #10a95b;
-        border-width: 4px;
-        @media (max-width: 720px) {
-            border-width: 2px;
-        }
+        @include border;
     }
+
     &__title {
         text-align: center;
         color: white;
+
         @media (max-width: 900px) {
             font-size: 1em;
             margin-block-start: 0.5em;

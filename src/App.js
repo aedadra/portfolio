@@ -8,19 +8,20 @@ import Footer from './components/Footer';
 import Error from './pages/error';
 
 
-function App () {
+function App() {
   return (
 
-<>
+    <>
       <Header />
       <Routes>
-        <Route path= "/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="competences" element={<Competences />} />
         <Route path="realisations" element={<Project />} />
-        <Route path="realisations/realisationsDetails/:id" element={<ProjectDetails/>} />
+        <Route path="realisations/realisationsDetails/:id" element={<ProjectDetails />} />
         <Route path="*" element={<Error />} />
       </ Routes>
       <Footer />
-      </>
-)}
+    </>
+  );
+}
 export default App

@@ -1,6 +1,6 @@
-import "../styles/Language.scss"
+import "../styles/Language.scss";
 
-function Language (props) {
+function Language(props) {
 
     return (
         <div className="language">

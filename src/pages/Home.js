@@ -1,5 +1,5 @@
 import '../styles/Home.scss';
-import Identite from "../images/Identite.jpg"
+import Identite from "../images/Identite.jpg";
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
 				  <h1 className="home__title">Qui suis-je ?</h1>
 				  <p>Bienvenue !</p>
 				  <p>Je m'appelle Clément, j'ai 29 ans et je vis à Brest. Je suis en reconversion proffessionelle et j'ai suivi une formation de développeur web. </p>
-				  <p>Je vous présente donc mon site. N'hésitez pas à me contacter via le formulaire de contact.</p>
+				  <p>Je vous présente donc mon site. N'hésitez pas à me contacter via le bouton en bas de page.</p>
 				  <p>Bonne visite !</p>
 			  </div>
 			  <div className='home__parcours'>
@@ -31,8 +31,7 @@ function Home() {
 		  </div>
 	  </div>
 	  <div className='contact'>
-		  <button className='submit'>
-			
+		  <button className='submit'>			
 			  <Link to='#'
 				  onClick={() => window.location = 'mailto:clement.moulin@yahoo.fr'}>
 				  Contactez-moi !

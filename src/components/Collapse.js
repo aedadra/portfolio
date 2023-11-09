@@ -1,8 +1,8 @@
 import { useState } from "react";
 import VectorOpen from "../images/VectorOpen.png";
-import "../styles/Collapse.scss"
+import "../styles/Collapse.scss";
 
-function Collapse({title, content}) {
+function Collapse({ title, content }) {
 
     const [open, setOPen] = useState(false);
     const [toggle, setToggle] = useState(false);
@@ -17,12 +17,12 @@ function Collapse({title, content}) {
             <div className="collapse__title">
                 <h3 className="collapse__title--h"> {title}</h3>
                 <button onClick={OpenIt} className="collapse__title--img">
-                    <img src={VectorOpen} alt="fleche vers le bas" className={toggle ? "up" : "down"}/>
+                    <img src={VectorOpen} alt="fleche vers le bas" className={toggle ? "up" : "down"} />
                 </button>
-            </div> 
+            </div>
             <div className="collapse__content">
-            {open && <p>{content}</p>} 
-            </div>           
+                {open && <p>{content}</p>}
+            </div>
         </div>
     );
 }
