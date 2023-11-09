@@ -6,6 +6,7 @@
     @include displayCenter;
     flex-direction: column;
     padding-bottom: 20px;
+    height: 70vh;   
     @media (max-width: 900px) {
         height: 81vh;      
     }
