@@ -8,7 +8,7 @@ function Header() {
             <div className='header'>
                 <NavLink className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "activeH1" : "pendingH1"
-                } to="/portfolio"><h1>Clément Moulin</h1></NavLink>
+                } to="/"><h1>Clément Moulin</h1></NavLink>
                 <div>
                     <nav className='header__link'>
                         <NavLink className={({ isActive, isPending }) =>
