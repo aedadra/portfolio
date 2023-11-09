@@ -6,6 +6,7 @@
     @include displayCenter;
     flex-direction: column;
     padding-bottom: 20px;
+    min-height: 90%;
 
     & h1 {
         margin-block-start: 0;
@@ -20,7 +21,6 @@
         @media (max-width: 720px) {
             font-size: 6em;
         }
-
     }
 
     & h3 {
