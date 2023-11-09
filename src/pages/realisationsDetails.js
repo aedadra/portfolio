@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import Language from "../components/Language";
@@ -9,14 +9,17 @@ function ProjectDetails() {
 
 	const params = useParams();
 	const [projectDetail, setPorjectDetail] = useState();
-
+	const navigate = useNavigate ()
 	useEffect(() => {
-
+		
 		const picked = project.find(({ id }) => id === params.id)
-		setPorjectDetail(picked)
-
-	}, [params]);
-
+		setPorjectDetail(picked) 
+		if (picked === undefined) {
+			navigate("Error", { state: { message: "Le projet n'existe pas" } })
+		}
+	}
+	, [params, navigate]);
+	
 	const outils = projectDetail && projectDetail.language.map((language, id) => {
 		return (<li key={id}>{language}</li>)
 	});
