@@ -15,9 +15,11 @@ function Collapse({ title, content }) {
     return (
         <div className="collapse">
             <div className="collapse__title">
+            
                 <h3 className="collapse__title--h"> {title}</h3>
                 <button onClick={OpenIt} className="collapse__title--img">
                     <img src={VectorOpen} alt="fleche vers le bas" className={toggle ? "up" : "down"} />
+                    
                 </button>
             </div>
             <div className="collapse__content">
