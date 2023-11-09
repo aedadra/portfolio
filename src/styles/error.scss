@@ -6,7 +6,9 @@
     @include displayCenter;
     flex-direction: column;
     padding-bottom: 20px;
-    min-height: 59vh;
+    @media (max-width: 900px) {
+        min-height: 70vh;      
+    }
 
     & h1 {
         margin-block-start: 0;
