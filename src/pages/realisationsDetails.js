@@ -21,7 +21,7 @@ function ProjectDetails() {
 	, [params, navigate]);
 	
 	const outils = projectDetail && projectDetail.language.map((language, id) => {
-		return (<li key={id}>{language}</li>)
+		return (<ul><li key={id}>{language}</li></ul>)
 	});
 
 	return (

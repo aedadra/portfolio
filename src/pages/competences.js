@@ -10,7 +10,7 @@ function Competences() {
             <div className="competences__content">
                 {competence.map((competence, id) =>
                     <div key={id} className="competences__collapse">
-                        <Collapse title={competence.title} content={competence.competences.map((competences, index) => { return (<li className="competences__li" key={index}>{competences}</li>) })} />
+                        <Collapse title={competence.title} content={competence.competences.map((competences, index) => { return (<ul><li className="competences__li" key={index}>{competences}</li></ul>) })} />
                     </div>
                 )}
             </div>

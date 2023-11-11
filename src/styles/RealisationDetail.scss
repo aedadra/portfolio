@@ -30,6 +30,7 @@
 
     &__image {
         width: 80%;
+        height: auto;
         justify-content: center;
         object-fit: cover;
         @include border;

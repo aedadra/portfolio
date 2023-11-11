@@ -23,7 +23,7 @@
 
     &__card {
         width: 40%;
-
+        height: auto;
         @media (max-width: 720px) {
             width: 80%;
         }
