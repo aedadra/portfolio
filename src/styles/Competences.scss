@@ -3,6 +3,8 @@
 .competences {
     background-color: black;
     padding-top: 30px;
+    min-height: 80vh;
+    animation: fadeIn 2s ease-in-out;
 
     &__title {
         @include title;

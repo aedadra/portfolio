@@ -4,7 +4,7 @@ function Language(props) {
 
     return (
         <div className="language">
-            <h3 className="language__title">Langages et outils</h3>
+            <h2 className="language__title">Langages et outils</h2>
             <p className="language__content">{props.language}</p>
         </div>
     );

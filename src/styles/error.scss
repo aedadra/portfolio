@@ -6,9 +6,10 @@
     @include displayCenter;
     flex-direction: column;
     padding-bottom: 20px;
-    height: 70vh;   
+    padding-bottom: 80px;
+
     @media (max-width: 900px) {
-        height: 81vh;      
+        height: 81vh;
     }
 
     & h1 {
@@ -16,9 +17,9 @@
         margin-block-end: 0;
         padding-top: 20px;
         font-size: 8em;
-        
+
         @media (max-width: 900px) {
-            font-size: 7em;       
+            font-size: 7em;
         }
 
         @media (max-width: 720px) {
@@ -31,16 +32,17 @@
         margin-block-end: 0;
         margin-block-start: 0.5em;
         text-align: center;
+
         @media (max-width: 900px) {
-            font-size: 2em;       
+            font-size: 2em;
         }
     }
 
     & p {
         font-size: 2em;
-        
+
         @media (max-width: 900px) {
-            font-size: 1.5em;       
+            font-size: 1.5em;
         }
     }
 
@@ -54,8 +56,9 @@
         padding-right: 10px;
         font-weight: 600;
         border-width: 4px;
+
         @media (max-width: 900px) {
-            font-size: 1.5em;       
+            font-size: 1.5em;
         }
     }
 
@@ -64,4 +67,8 @@
         background-color: #10a95b;
         font-weight: 800;
     }
+}
+
+.background {
+    background-color: black;
 }

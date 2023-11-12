@@ -4,8 +4,8 @@ function Card({ cover, title }) {
 
 	return (
 		<article className="card">
-			<img src={cover} alt="" className="card__image" />
-			<h3 className="card__title">{title}</h3>
+			<img src={cover} alt="" fetchpriority="high" className="card__image" />
+			<h2 className="card__title">{title}</h2>
 		</article>
 	);
 }

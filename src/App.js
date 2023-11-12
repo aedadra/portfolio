@@ -6,20 +6,26 @@ import ProjectDetails from './pages/realisationsDetails';
 import Competences from './pages/competences';
 import Footer from './components/Footer';
 import Error from './pages/error';
-
+import {AnimatePresence} from "framer-motion";
+import { useLocation } from 'react-router-dom';
 
 function App() {
+
+  const location = useLocation();
+
   return (
 
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="competences" element={<Competences />} />
-        <Route path="realisations" element={<Project />} />
-        <Route path="realisations/realisationsDetails/:id" element={<ProjectDetails />} />
-        <Route path="*" element={<Error />} />
-      </ Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="competences" element={<Competences />} />
+          <Route path="realisations" element={<Project />} />
+          <Route path="realisations/realisationsDetails/:id" element={<ProjectDetails />} />
+          <Route path="*" element={<Error />} />
+        </ Routes>
+      </AnimatePresence>
       <Footer />
     </>
   );

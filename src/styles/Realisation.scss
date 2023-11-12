@@ -3,6 +3,8 @@
 .projects {
     background-color: black;
     padding-top: 30px;
+    min-height: 80vh;
+    animation: fadeIn 2s ease-in-out;
 
     &__title {
         @include title;
@@ -11,7 +13,7 @@
     &__content {
         @include displayCenter;
         flex-wrap: wrap;
-        gap: 10%;
+        gap: 8%;
         margin-left: 5%;
         margin-right: 5%;
         font-family: 'Roboto Slab';
@@ -28,11 +30,9 @@
             width: 80%;
         }
     }
-
     &__card :hover {
         transform: scale(1.05);
     }
-
     &__card a {
         text-decoration: none;
     }
